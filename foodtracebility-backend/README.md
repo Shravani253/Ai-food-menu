@@ -15,10 +15,15 @@ Convert raw data into readable explanations for customers
 backend/
 │
 ├── app.py
+
 ├── database_sql.py
+
 ├── interactive_populate.py
+
 ├── schema.sql
+
 ├── config.py
+
 └── requirements.txt
 
 🧠 Database Tables Used
@@ -26,14 +31,23 @@ backend/
 The backend operates on the following tables:
 
 vendors
+
 ingredients
+
 intake_events
+
 storage_details
+
 transport_details
+
 outlets
+
 distribution_details
+
 quality_details
+
 dishes
+
 dish_ingredients
 
 All tables are connected via foreign keys to enable full traceability.
