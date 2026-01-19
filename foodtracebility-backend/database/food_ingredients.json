@@ -1,0 +1,1091 @@
+{
+    "vendors": [
+        {
+            "vendor_id": 1,
+            "vendor_name": "Domino\u2019s India",
+            "wallet_address": "0xDOMINO123",
+            "location": "India",
+            "is_verified": true,
+            "created_at": "2026-01-11 02:26:16.402882",
+            "role_tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        }
+    ],
+    "ingredients": [
+        {
+            "ingredient_id": 1,
+            "ingredient_name": "Pizza Base",
+            "category": "processed",
+            "unit": "piece",
+            "created_at": "2026-01-11 02:26:37.712479"
+        },
+        {
+            "ingredient_id": 2,
+            "ingredient_name": "Mozzarella Cheese",
+            "category": "processed",
+            "unit": "grams",
+            "created_at": "2026-01-11 02:26:37.712479"
+        },
+        {
+            "ingredient_id": 3,
+            "ingredient_name": "Tomato Sauce",
+            "category": "processed",
+            "unit": "grams",
+            "created_at": "2026-01-11 02:26:37.712479"
+        },
+        {
+            "ingredient_id": 4,
+            "ingredient_name": "Capsicum",
+            "category": "raw",
+            "unit": "grams",
+            "created_at": "2026-01-11 02:26:37.712479"
+        },
+        {
+            "ingredient_id": 5,
+            "ingredient_name": "Onion",
+            "category": "raw",
+            "unit": "grams",
+            "created_at": "2026-01-11 02:26:37.712479"
+        },
+        {
+            "ingredient_id": 6,
+            "ingredient_name": "Mushroom",
+            "category": "raw",
+            "unit": "grams",
+            "created_at": "2026-01-11 02:26:37.712479"
+        },
+        {
+            "ingredient_id": 7,
+            "ingredient_name": "Paneer",
+            "category": "processed",
+            "unit": "grams",
+            "created_at": "2026-01-11 02:26:37.712479"
+        },
+        {
+            "ingredient_id": 8,
+            "ingredient_name": "Chicken Sausage",
+            "category": "processed",
+            "unit": "grams",
+            "created_at": "2026-01-11 02:26:37.712479"
+        },
+        {
+            "ingredient_id": 9,
+            "ingredient_name": "Pepperoni",
+            "category": "processed",
+            "unit": "grams",
+            "created_at": "2026-01-11 02:26:37.712479"
+        },
+        {
+            "ingredient_id": 10,
+            "ingredient_name": "Olives",
+            "category": "processed",
+            "unit": "grams",
+            "created_at": "2026-01-11 02:26:37.712479"
+        }
+    ],
+    "intake_events": [
+        {
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "vendor_id": 1,
+            "ingredient_id": 1,
+            "source_location": "Flour Factory Pune",
+            "quantity": "500.00",
+            "intake_datetime": "2026-01-11 02:26:57.020449",
+            "life_span_days": 7,
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "vendor_id": 1,
+            "ingredient_id": 2,
+            "source_location": "Cheese Plant Gujarat",
+            "quantity": "200.00",
+            "intake_datetime": "2026-01-11 02:26:57.020449",
+            "life_span_days": 10,
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "vendor_id": 1,
+            "ingredient_id": 3,
+            "source_location": "Sauce Supplier Nashik",
+            "quantity": "100.00",
+            "intake_datetime": "2026-01-11 02:26:57.020449",
+            "life_span_days": 15,
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "vendor_id": 1,
+            "ingredient_id": 4,
+            "source_location": "Local Market",
+            "quantity": "50.00",
+            "intake_datetime": "2026-01-11 02:26:57.020449",
+            "life_span_days": 5,
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "vendor_id": 1,
+            "ingredient_id": 5,
+            "source_location": "Local Market",
+            "quantity": "50.00",
+            "intake_datetime": "2026-01-11 02:26:57.020449",
+            "life_span_days": 5,
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "vendor_id": 1,
+            "ingredient_id": 7,
+            "source_location": "Dairy Supplier",
+            "quantity": "40.00",
+            "intake_datetime": "2026-01-11 02:26:57.020449",
+            "life_span_days": 6,
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "vendor_id": 1,
+            "ingredient_id": 8,
+            "source_location": "Meat Supplier",
+            "quantity": "60.00",
+            "intake_datetime": "2026-01-11 02:26:57.020449",
+            "life_span_days": 4,
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        }
+    ],
+    "storage_details": [
+        {
+            "storage_id": 1,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "vendor_id": 1,
+            "storage_type": "Cold",
+            "temperature": "4.00",
+            "humidity": "75.00",
+            "storage_location": "Central Cold Storage - Mumbai",
+            "start_time": "2026-01-10 21:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 2,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "vendor_id": 1,
+            "storage_type": "Cold",
+            "temperature": "4.00",
+            "humidity": "75.00",
+            "storage_location": "Central Cold Storage - Mumbai",
+            "start_time": "2026-01-10 21:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 3,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "vendor_id": 1,
+            "storage_type": "Cold",
+            "temperature": "4.00",
+            "humidity": "75.00",
+            "storage_location": "Central Cold Storage - Mumbai",
+            "start_time": "2026-01-10 21:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 4,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "vendor_id": 1,
+            "storage_type": "Cold",
+            "temperature": "4.00",
+            "humidity": "75.00",
+            "storage_location": "Central Cold Storage - Mumbai",
+            "start_time": "2026-01-10 21:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 5,
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "vendor_id": 1,
+            "storage_type": "Cold",
+            "temperature": "4.00",
+            "humidity": "75.00",
+            "storage_location": "Central Cold Storage - Mumbai",
+            "start_time": "2026-01-10 21:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 6,
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "vendor_id": 1,
+            "storage_type": "Cold",
+            "temperature": "4.00",
+            "humidity": "75.00",
+            "storage_location": "Central Cold Storage - Mumbai",
+            "start_time": "2026-01-10 21:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 7,
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "vendor_id": 1,
+            "storage_type": "Cold",
+            "temperature": "4.00",
+            "humidity": "75.00",
+            "storage_location": "Central Cold Storage - Mumbai",
+            "start_time": "2026-01-10 21:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 8,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "vendor_id": 1,
+            "storage_type": "Dry",
+            "temperature": "22.00",
+            "humidity": "50.00",
+            "storage_location": "Dry Warehouse - Mumbai",
+            "start_time": "2026-01-10 02:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 9,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "vendor_id": 1,
+            "storage_type": "Dry",
+            "temperature": "22.00",
+            "humidity": "50.00",
+            "storage_location": "Dry Warehouse - Mumbai",
+            "start_time": "2026-01-10 02:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 10,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "vendor_id": 1,
+            "storage_type": "Dry",
+            "temperature": "22.00",
+            "humidity": "50.00",
+            "storage_location": "Dry Warehouse - Mumbai",
+            "start_time": "2026-01-10 02:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 11,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "vendor_id": 1,
+            "storage_type": "Dry",
+            "temperature": "22.00",
+            "humidity": "50.00",
+            "storage_location": "Dry Warehouse - Mumbai",
+            "start_time": "2026-01-10 02:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 12,
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "vendor_id": 1,
+            "storage_type": "Dry",
+            "temperature": "22.00",
+            "humidity": "50.00",
+            "storage_location": "Dry Warehouse - Mumbai",
+            "start_time": "2026-01-10 02:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 13,
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "vendor_id": 1,
+            "storage_type": "Dry",
+            "temperature": "22.00",
+            "humidity": "50.00",
+            "storage_location": "Dry Warehouse - Mumbai",
+            "start_time": "2026-01-10 02:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "storage_id": 14,
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "vendor_id": 1,
+            "storage_type": "Dry",
+            "temperature": "22.00",
+            "humidity": "50.00",
+            "storage_location": "Dry Warehouse - Mumbai",
+            "start_time": "2026-01-10 02:41:08.822689",
+            "end_time": "2026-01-11 02:41:08.822689",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        }
+    ],
+    "transport_details": [
+        {
+            "transport_id": 1,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "from_location": "Supplier Warehouse",
+            "to_location": "Domino\u2019s Central Warehouse Mumbai",
+            "vehicle_type": "Refrigerated Truck",
+            "temperature": "5.00",
+            "dispatch_time": "2026-01-10 20:41:33.631696",
+            "arrival_time": "2026-01-10 22:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 2,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "from_location": "Supplier Warehouse",
+            "to_location": "Domino\u2019s Central Warehouse Mumbai",
+            "vehicle_type": "Refrigerated Truck",
+            "temperature": "5.00",
+            "dispatch_time": "2026-01-10 20:41:33.631696",
+            "arrival_time": "2026-01-10 22:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 3,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "from_location": "Supplier Warehouse",
+            "to_location": "Domino\u2019s Central Warehouse Mumbai",
+            "vehicle_type": "Refrigerated Truck",
+            "temperature": "5.00",
+            "dispatch_time": "2026-01-10 20:41:33.631696",
+            "arrival_time": "2026-01-10 22:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 4,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "from_location": "Supplier Warehouse",
+            "to_location": "Domino\u2019s Central Warehouse Mumbai",
+            "vehicle_type": "Refrigerated Truck",
+            "temperature": "5.00",
+            "dispatch_time": "2026-01-10 20:41:33.631696",
+            "arrival_time": "2026-01-10 22:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 5,
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "from_location": "Supplier Warehouse",
+            "to_location": "Domino\u2019s Central Warehouse Mumbai",
+            "vehicle_type": "Refrigerated Truck",
+            "temperature": "5.00",
+            "dispatch_time": "2026-01-10 20:41:33.631696",
+            "arrival_time": "2026-01-10 22:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 6,
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "from_location": "Supplier Warehouse",
+            "to_location": "Domino\u2019s Central Warehouse Mumbai",
+            "vehicle_type": "Refrigerated Truck",
+            "temperature": "5.00",
+            "dispatch_time": "2026-01-10 20:41:33.631696",
+            "arrival_time": "2026-01-10 22:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 7,
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "from_location": "Supplier Warehouse",
+            "to_location": "Domino\u2019s Central Warehouse Mumbai",
+            "vehicle_type": "Refrigerated Truck",
+            "temperature": "5.00",
+            "dispatch_time": "2026-01-10 20:41:33.631696",
+            "arrival_time": "2026-01-10 22:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 8,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "from_location": "Domino\u2019s Central Warehouse Mumbai",
+            "to_location": "Domino\u2019s Andheri West Outlet",
+            "vehicle_type": "Delivery Van",
+            "temperature": "8.00",
+            "dispatch_time": "2026-01-10 23:41:33.631696",
+            "arrival_time": "2026-01-11 01:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 9,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "from_location": "Domino\u2019s Central Warehouse Mumbai",
+            "to_location": "Domino\u2019s Andheri West Outlet",
+            "vehicle_type": "Delivery Van",
+            "temperature": "8.00",
+            "dispatch_time": "2026-01-10 23:41:33.631696",
+            "arrival_time": "2026-01-11 01:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 10,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "from_location": "Domino\u2019s Central Warehouse Mumbai",
+            "to_location": "Domino\u2019s Andheri West Outlet",
+            "vehicle_type": "Delivery Van",
+            "temperature": "8.00",
+            "dispatch_time": "2026-01-10 23:41:33.631696",
+            "arrival_time": "2026-01-11 01:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 11,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "from_location": "Domino\u2019s Central Warehouse Mumbai",
+            "to_location": "Domino\u2019s Andheri West Outlet",
+            "vehicle_type": "Delivery Van",
+            "temperature": "8.00",
+            "dispatch_time": "2026-01-10 23:41:33.631696",
+            "arrival_time": "2026-01-11 01:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 12,
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "from_location": "Domino\u2019s Central Warehouse Mumbai",
+            "to_location": "Domino\u2019s Andheri West Outlet",
+            "vehicle_type": "Delivery Van",
+            "temperature": "8.00",
+            "dispatch_time": "2026-01-10 23:41:33.631696",
+            "arrival_time": "2026-01-11 01:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 13,
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "from_location": "Domino\u2019s Central Warehouse Mumbai",
+            "to_location": "Domino\u2019s Andheri West Outlet",
+            "vehicle_type": "Delivery Van",
+            "temperature": "8.00",
+            "dispatch_time": "2026-01-10 23:41:33.631696",
+            "arrival_time": "2026-01-11 01:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "transport_id": 14,
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "from_location": "Domino\u2019s Central Warehouse Mumbai",
+            "to_location": "Domino\u2019s Andheri West Outlet",
+            "vehicle_type": "Delivery Van",
+            "temperature": "8.00",
+            "dispatch_time": "2026-01-10 23:41:33.631696",
+            "arrival_time": "2026-01-11 01:41:33.631696",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        }
+    ],
+    "outlets": [
+        {
+            "outlet_id": 1,
+            "vendor_id": 1,
+            "outlet_name": "Domino\u2019s Andheri West",
+            "city": "Mumbai",
+            "created_at": "2026-01-11 02:26:16.402882"
+        }
+    ],
+    "distribution_details": [
+        {
+            "distribution_id": 1,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "outlet_id": 1,
+            "quantity_sent": "20.00",
+            "distributed_at": "2026-01-11 01:42:36.017482",
+            "status": "delivered",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "distribution_id": 2,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "outlet_id": 1,
+            "quantity_sent": "20.00",
+            "distributed_at": "2026-01-11 01:42:36.017482",
+            "status": "delivered",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "distribution_id": 3,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "outlet_id": 1,
+            "quantity_sent": "20.00",
+            "distributed_at": "2026-01-11 01:42:36.017482",
+            "status": "delivered",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "distribution_id": 4,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "outlet_id": 1,
+            "quantity_sent": "20.00",
+            "distributed_at": "2026-01-11 01:42:36.017482",
+            "status": "delivered",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "distribution_id": 5,
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "outlet_id": 1,
+            "quantity_sent": "20.00",
+            "distributed_at": "2026-01-11 01:42:36.017482",
+            "status": "delivered",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "distribution_id": 6,
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "outlet_id": 1,
+            "quantity_sent": "20.00",
+            "distributed_at": "2026-01-11 01:42:36.017482",
+            "status": "delivered",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "distribution_id": 7,
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "outlet_id": 1,
+            "quantity_sent": "20.00",
+            "distributed_at": "2026-01-11 01:42:36.017482",
+            "status": "delivered",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        }
+    ],
+    "quality_details": [
+        {
+            "quality_id": 1,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "vendor_id": 1,
+            "checked_by_role": "QC",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "12.50",
+            "remarks": "Fresh and acceptable quality",
+            "checked_at": "2026-01-11 00:42:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 2,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "vendor_id": 1,
+            "checked_by_role": "QC",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "12.50",
+            "remarks": "Fresh and acceptable quality",
+            "checked_at": "2026-01-11 00:42:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 3,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "vendor_id": 1,
+            "checked_by_role": "QC",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "12.50",
+            "remarks": "Fresh and acceptable quality",
+            "checked_at": "2026-01-11 00:42:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 4,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "vendor_id": 1,
+            "checked_by_role": "QC",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "12.50",
+            "remarks": "Fresh and acceptable quality",
+            "checked_at": "2026-01-11 00:42:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 5,
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "vendor_id": 1,
+            "checked_by_role": "QC",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "12.50",
+            "remarks": "Fresh and acceptable quality",
+            "checked_at": "2026-01-11 00:42:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 6,
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "vendor_id": 1,
+            "checked_by_role": "QC",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "12.50",
+            "remarks": "Fresh and acceptable quality",
+            "checked_at": "2026-01-11 00:42:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 7,
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "vendor_id": 1,
+            "checked_by_role": "QC",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "12.50",
+            "remarks": "Fresh and acceptable quality",
+            "checked_at": "2026-01-11 00:42:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 8,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "vendor_id": 1,
+            "checked_by_role": "store_manager",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "13.00",
+            "remarks": "Approved for kitchen usage",
+            "checked_at": "2026-01-11 02:12:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 9,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "vendor_id": 1,
+            "checked_by_role": "store_manager",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "13.00",
+            "remarks": "Approved for kitchen usage",
+            "checked_at": "2026-01-11 02:12:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 10,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "vendor_id": 1,
+            "checked_by_role": "store_manager",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "13.00",
+            "remarks": "Approved for kitchen usage",
+            "checked_at": "2026-01-11 02:12:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 11,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "vendor_id": 1,
+            "checked_by_role": "store_manager",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "13.00",
+            "remarks": "Approved for kitchen usage",
+            "checked_at": "2026-01-11 02:12:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 12,
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "vendor_id": 1,
+            "checked_by_role": "store_manager",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "13.00",
+            "remarks": "Approved for kitchen usage",
+            "checked_at": "2026-01-11 02:12:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 13,
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "vendor_id": 1,
+            "checked_by_role": "store_manager",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "13.00",
+            "remarks": "Approved for kitchen usage",
+            "checked_at": "2026-01-11 02:12:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        },
+        {
+            "quality_id": 14,
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "vendor_id": 1,
+            "checked_by_role": "store_manager",
+            "visual_grade": "A",
+            "smell_check": "Pass",
+            "moisture_level": "13.00",
+            "remarks": "Approved for kitchen usage",
+            "checked_at": "2026-01-11 02:12:13.402123",
+            "tx_hash": null,
+            "block_number": null,
+            "chain_timestamp": null
+        }
+    ],
+    "dishes": [
+        {
+            "dish_id": 1,
+            "outlet_id": 1,
+            "dish_name": "Margherita",
+            "description": "Classic delight with 100% real mozzarella cheese",
+            "created_at": "2026-01-11 02:29:44.730339",
+            "total_sold": 25,
+            "quality_status": "approved"
+        },
+        {
+            "dish_id": 2,
+            "outlet_id": 1,
+            "dish_name": "Farmhouse",
+            "description": "Onion, capsicum, tomato, grilled mushroom",
+            "created_at": "2026-01-11 02:29:44.730339",
+            "total_sold": 18,
+            "quality_status": "approved"
+        },
+        {
+            "dish_id": 3,
+            "outlet_id": 1,
+            "dish_name": "Peppy Paneer",
+            "description": "Paneer, capsicum, red paprika",
+            "created_at": "2026-01-11 02:29:44.730339",
+            "total_sold": 12,
+            "quality_status": "approved"
+        },
+        {
+            "dish_id": 4,
+            "outlet_id": 1,
+            "dish_name": "Chicken Sausage Pizza",
+            "description": "Chicken sausage with mozzarella cheese",
+            "created_at": "2026-01-11 02:29:44.730339",
+            "total_sold": 20,
+            "quality_status": "approved"
+        }
+    ],
+    "dish_ingredients": [
+        {
+            "dish_ingredient_id": 1,
+            "dish_id": 1,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "ingredient_id": 1,
+            "quantity_used": "1.00"
+        },
+        {
+            "dish_ingredient_id": 2,
+            "dish_id": 1,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "ingredient_id": 2,
+            "quantity_used": "100.00"
+        },
+        {
+            "dish_ingredient_id": 3,
+            "dish_id": 1,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "ingredient_id": 3,
+            "quantity_used": "50.00"
+        },
+        {
+            "dish_ingredient_id": 4,
+            "dish_id": 2,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "ingredient_id": 1,
+            "quantity_used": "1.00"
+        },
+        {
+            "dish_ingredient_id": 5,
+            "dish_id": 2,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "ingredient_id": 2,
+            "quantity_used": "120.00"
+        },
+        {
+            "dish_ingredient_id": 6,
+            "dish_id": 2,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "ingredient_id": 3,
+            "quantity_used": "50.00"
+        },
+        {
+            "dish_ingredient_id": 7,
+            "dish_id": 2,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "ingredient_id": 4,
+            "quantity_used": "30.00"
+        },
+        {
+            "dish_ingredient_id": 8,
+            "dish_id": 2,
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "ingredient_id": 5,
+            "quantity_used": "30.00"
+        },
+        {
+            "dish_ingredient_id": 9,
+            "dish_id": 3,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "ingredient_id": 1,
+            "quantity_used": "1.00"
+        },
+        {
+            "dish_ingredient_id": 10,
+            "dish_id": 3,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "ingredient_id": 2,
+            "quantity_used": "110.00"
+        },
+        {
+            "dish_ingredient_id": 11,
+            "dish_id": 3,
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "ingredient_id": 7,
+            "quantity_used": "40.00"
+        },
+        {
+            "dish_ingredient_id": 12,
+            "dish_id": 3,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "ingredient_id": 4,
+            "quantity_used": "25.00"
+        },
+        {
+            "dish_ingredient_id": 13,
+            "dish_id": 4,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "ingredient_id": 1,
+            "quantity_used": "1.00"
+        },
+        {
+            "dish_ingredient_id": 14,
+            "dish_id": 4,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "ingredient_id": 2,
+            "quantity_used": "120.00"
+        },
+        {
+            "dish_ingredient_id": 15,
+            "dish_id": 4,
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "ingredient_id": 8,
+            "quantity_used": "50.00"
+        },
+        {
+            "dish_ingredient_id": 1,
+            "dish_id": 1,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "ingredient_id": 1,
+            "quantity_used": "1.00"
+        },
+        {
+            "dish_ingredient_id": 2,
+            "dish_id": 1,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "ingredient_id": 2,
+            "quantity_used": "100.00"
+        },
+        {
+            "dish_ingredient_id": 3,
+            "dish_id": 1,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "ingredient_id": 3,
+            "quantity_used": "50.00"
+        },
+        {
+            "dish_ingredient_id": 4,
+            "dish_id": 2,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "ingredient_id": 1,
+            "quantity_used": "1.00"
+        },
+        {
+            "dish_ingredient_id": 5,
+            "dish_id": 2,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "ingredient_id": 2,
+            "quantity_used": "120.00"
+        },
+        {
+            "dish_ingredient_id": 6,
+            "dish_id": 2,
+            "intake_id": "1e7e85a0-12c6-42bd-973d-e1fbad96d7d2",
+            "ingredient_id": 3,
+            "quantity_used": "50.00"
+        },
+        {
+            "dish_ingredient_id": 7,
+            "dish_id": 2,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "ingredient_id": 4,
+            "quantity_used": "30.00"
+        },
+        {
+            "dish_ingredient_id": 8,
+            "dish_id": 2,
+            "intake_id": "2388dc65-9bea-4f86-b7a5-71ba72405a72",
+            "ingredient_id": 5,
+            "quantity_used": "30.00"
+        },
+        {
+            "dish_ingredient_id": 9,
+            "dish_id": 3,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "ingredient_id": 1,
+            "quantity_used": "1.00"
+        },
+        {
+            "dish_ingredient_id": 10,
+            "dish_id": 3,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "ingredient_id": 2,
+            "quantity_used": "110.00"
+        },
+        {
+            "dish_ingredient_id": 11,
+            "dish_id": 3,
+            "intake_id": "0720665a-af7e-444f-ba43-2a3a83f61477",
+            "ingredient_id": 7,
+            "quantity_used": "40.00"
+        },
+        {
+            "dish_ingredient_id": 12,
+            "dish_id": 3,
+            "intake_id": "185b9ea7-9e83-416d-b4f8-0dff54335f2e",
+            "ingredient_id": 4,
+            "quantity_used": "25.00"
+        },
+        {
+            "dish_ingredient_id": 13,
+            "dish_id": 4,
+            "intake_id": "11556a3f-39bb-44a0-b40c-0bf065ac3fa0",
+            "ingredient_id": 1,
+            "quantity_used": "1.00"
+        },
+        {
+            "dish_ingredient_id": 14,
+            "dish_id": 4,
+            "intake_id": "afb57967-ab4e-41a6-afbb-09cf3d5868d0",
+            "ingredient_id": 2,
+            "quantity_used": "120.00"
+        },
+        {
+            "dish_ingredient_id": 15,
+            "dish_id": 4,
+            "intake_id": "7b573e1f-be22-4cef-934c-bfffbae2cc40",
+            "ingredient_id": 8,
+            "quantity_used": "50.00"
+        }
+    ]
+}

@@ -61,3 +61,12 @@ docker-compose.override.yml
 # Secrets
 *.pem
 *.key
+
+# Virtual environments
+venv/
+venv311/
+.venv/
+
+# Session / local files
+*.session.sql
+
