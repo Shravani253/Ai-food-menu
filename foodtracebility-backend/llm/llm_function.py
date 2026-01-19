@@ -1,13 +1,11 @@
 import os
-
+import asyncio
 from langchain_community.vectorstores import Chroma
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain.chains import RetrievalQA
 
-from llm.alerts_embeddings import generate_visual_alerts
-from llm.alerts_embeddings import system_dashboard_summary
-
+from llm.alerts_embeddings import generate_visual_alerts, system_dashboard_summary
 
 
 # ===============================
@@ -16,49 +14,85 @@ from llm.alerts_embeddings import system_dashboard_summary
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 CHROMA_PATH = os.path.join(BASE_DIR, "chroma_db")
-
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
-if not GEMINI_API_KEY:
-    raise ValueError("GEMINI_API_KEY not found in environment variables")
 
 
 # ===============================
-# Load Vector DB
+# Helpers
 # ===============================
 
-embedding_model = HuggingFaceEmbeddings(
-    model_name="all-MiniLM-L6-v2"
-)
-
-vectordb = Chroma(
-    persist_directory=CHROMA_PATH,
-    embedding_function=embedding_model
-)
-
-retriever = vectordb.as_retriever(search_kwargs={"k": 3})
+def ensure_event_loop():
+    """Ensure an asyncio event loop exists (needed for gRPC clients in Streamlit)."""
+    try:
+        asyncio.get_running_loop()
+    except RuntimeError:
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
 
 
 # ===============================
-# Load Gemini LLM
+# Lazy Loaders (NO heavy work at import time)
 # ===============================
 
-llm = ChatGoogleGenerativeAI(
-    model="models/gemini-flash-latest",   # <-- Correct model name
-    google_api_key=GEMINI_API_KEY,
-    temperature=0.2
-)
+_embedding_model = None
+_vectordb = None
+_retriever = None
+_llm = None
+_qa_chain = None
 
 
-# ===============================
-# RAG Chain
-# ===============================
+def get_embedding_model():
+    global _embedding_model
+    if _embedding_model is None:
+        _embedding_model = HuggingFaceEmbeddings(
+            model_name="all-MiniLM-L6-v2"
+        )
+    return _embedding_model
 
-qa_chain = RetrievalQA.from_chain_type(
-    llm=llm,
-    retriever=retriever,
-    return_source_documents=True,
-    chain_type="stuff"
-)
+
+def get_vectordb():
+    global _vectordb
+    if _vectordb is None:
+        _vectordb = Chroma(
+            persist_directory=CHROMA_PATH,
+            embedding_function=get_embedding_model()
+        )
+    return _vectordb
+
+
+def get_retriever():
+    global _retriever
+    if _retriever is None:
+        _retriever = get_vectordb().as_retriever(search_kwargs={"k": 3})
+    return _retriever
+
+
+def get_llm():
+    global _llm
+    if _llm is None:
+        ensure_event_loop()
+
+        if not GEMINI_API_KEY:
+            raise ValueError("GEMINI_API_KEY is not set in environment variables.")
+
+        _llm = ChatGoogleGenerativeAI(
+            model="models/gemini-flash-latest",
+            google_api_key=GEMINI_API_KEY,
+            temperature=0.2
+        )
+    return _llm
+
+
+def get_qa_chain():
+    global _qa_chain
+    if _qa_chain is None:
+        _qa_chain = RetrievalQA.from_chain_type(
+            llm=get_llm(),
+            retriever=get_retriever(),
+            return_source_documents=True,
+            chain_type="stuff"
+        )
+    return _qa_chain
 
 
 # ===============================
@@ -84,8 +118,13 @@ Try asking:
 """.strip()
 
 
+# ===============================
+# Safe RAG Query
+# ===============================
+
 def safe_rag_query(query: str) -> str:
     try:
+        qa_chain = get_qa_chain()
         result = qa_chain.invoke({"query": query})
 
         answer = result["result"]
@@ -109,7 +148,7 @@ Please try again or check your API key and internet connection.
 
 
 # ===============================
-# Terminal Chat Endpoint
+# Terminal Chat
 # ===============================
 
 def start_terminal_chat():
