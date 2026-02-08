@@ -1,0 +1,26 @@
+.menu-page {
+    padding: 32px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.menu-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-title h1 {
+    font-size: 80px;
+    /* BIG heading */
+    font-weight: 800;
+    /* BOLD */
+    color: #0a3d62;
+    /* deep ocean blue */
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.menu-title p {
+    color: #555;
+    font-size: 15px;
+}

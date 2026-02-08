@@ -1,0 +1,83 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# =========================
+# Virtual Environments
+# =========================
+venv/
+.venv/
+env/
+venv311/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+
+# =========================
+# IDE / Editor
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Build / Cache
+# =========================
+dist/
+build/
+*.egg-info/
+.cache/
+tmp/
+temp/
+
+# =========================
+# Debug / Test / Local scripts (YOUR FILES)
+# =========================
+check_columns.py
+check_columns_v2.py
+check_schema.py
+diagnose_500.py
+fix_db_constraint.py
+inspect_ai_db.py
+inspect_insight.py
+map_flow.py
+test.py
+test_chat.py
+verify_backend.py
+verify_db.py
+verify_endpoints.py
+
+# Debug outputs / logs
+debug_log.txt
+output.txt
+db_schema_output.txt
+
+# =========================
+# Node (if used)
+# =========================
+node_modules/
+
+# =========================
+# Uploads / Generated
+# =========================
+uploads/
+generated/
+
+# =========================
+# Git
+# =========================
+.git/

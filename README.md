@@ -1,185 +1,203 @@
-# 🍽️ AI + Blockchain Based Food Traceability System
+# 🍽️ AI Food Menu — Freshness, Safety & Trust
 
-## 📌 Project Overview
-This project implements a **Food Traceability System** using **Artificial Intelligence (AI)** and **Blockchain** technology.
+An **AI-powered restaurant menu system** that dynamically adapts based on **ingredient freshness, storage conditions, and real human feedback (RLHF)**.
 
-The main goal is to **track the complete journey of a food product** from production to the consumer and **store this history securely on blockchain** so that it cannot be altered.
-
-AI is used to analyze food quality, and blockchain is used to **store these AI results and supply-chain events permanently**.
+Built for transparency, food safety, and customer trust.
 
 ---
 
-## 🎯 Problem Statement
-In today’s food supply chain:
-- Food history can be altered or hidden
-- Consumers do not know the true origin or quality of food
-- Fake labels and adulteration are common
+## 🚀 What This Project Does
 
-There is **no trusted and transparent system** to verify food data.
+This system replaces a static restaurant menu with a **living, intelligent menu** that:
 
----
-
-## 💡 Proposed Solution
-We propose a system where:
-- **AI analyzes food quality**
-- **Blockchain stores food history immutably**
-- **QR codes link physical food to blockchain records**
-
-This ensures **transparency, trust, and food safety**.
+- Shows **real-time food availability & freshness**
+- Explains *why* a dish is safe (or not) using AI
+- Lets users **chat with an AI** about their food
+- Learns from **human feedback (RLHF)** to improve future responses
+- Adapts menu visibility based on freshness signals
 
 ---
 
-## 🧠 Technologies Used
-- **Blockchain:** Ethereum (Smart Contracts using Solidity)
-- **AI:** Food quality analysis (image-based)
-- **Backend:** Node.js + Web3/Ethers.js
-- **Frontend:** HTML / React
-- **QR Code:** To fetch food history
+## 🧠 Core Features
+
+### ✅ Dynamic Menu Decisions
+- Menu items are **enabled / disabled** based on:
+  - Ingredient freshness
+  - Risk level
+  - Storage conditions
+- Decisions happen **server-side**, not via frontend logic
+
+### 🤖 AI Food Insight (LLM + RAG)
+- Each dish has an AI explanation:
+  - Ingredient freshness
+  - Safety considerations
+  - Availability reasoning
+- Powered by **Gemini (via LangChain)**
+
+### 💬 Dish-Level Chatbot
+- Users can ask:
+  - “Is this safe today?”
+  - “Why is this marked fresh?”
+- Chat uses **real menu + ingredient context (RAG)**
+
+### 🧪 RLHF (Human Feedback Loop)
+- Users **must submit written feedback**
+- Feedback is:
+  - Parsed using NLP
+  - Logged to database
+  - Used to adapt AI tone and clarity
+- Enables learning **without compromising safety**
 
 ---
 
-## 👥 Actors in the System
-The system supports multiple verified roles:
+## 🏗️ Architecture Overview
 
-| Role | Responsibility |
-|----|----|
-| Farmer | Creates food batch |
-| Manufacturer | Processes food |
-| Transporter | Ships food |
-| Retailer | Sells food |
-| AI System | Analyzes food quality |
-| Owner | Registers actors & recalls food |
+Frontend (React + Vite)
+│
+├── Menu Page (Category-wise)
+├── Dish Detail Page
+│ ├── AI Insight
+│ └── Chatbot + Feedback
+│
+Backend (FastAPI)
+│
+├── routes/
+│ ├── menu.py → Menu listing
+│ ├── insight.py → AI food explanation
+│ ├── chat.py → Dish chatbot (RAG)
+│ └── feedback.py → Human feedback intake
+│
+├── context_object/
+│ └── menu_context.py
+│
+├── llm/
+│ ├── llm_client.py
+│ ├── llm_provider.py
+│ └── prompt_builder.py
+│
+├── rlhf/
+│ └── feedback_analyzer.py
+│
+└── services/
+├── postgres.py
+├── ai_logger.py
+└── feedback_logger.py
 
-Only **authorized actors** can add data to the blockchain.
-
----
-
-## 🔁 How the System Works (Step by Step)
-
-### 1️⃣ Contract Deployment
-- The smart contract is deployed by the **Owner**
-- Owner controls actor registration and recalls
-
----
-
-### 2️⃣ Actor Registration
-- Owner registers each actor with:
-  - Wallet address
-  - Role (Farmer, AI, etc.)
-  - License ID
-- Only registered actors can write data
-
----
-
-### 3️⃣ Batch Creation
-- Farmer creates a **unique Batch ID**
-- Food name and batch status are recorded
-- This batch ID is used throughout the lifecycle
 
 ---
 
-### 4️⃣ Supply Chain Updates
-Each actor adds records:
-- Manufacturer → Processed
-- Transporter → In Transit
-- Retailer → For Sale
+## 🛠️ Tech Stack
 
-Each update:
-- Is stored permanently
-- Cannot be modified or deleted
+### Frontend
+- React + TypeScript
+- Vite
+- CSS (lightweight & fast)
 
----
-
-### 5️⃣ AI Quality Analysis
-- AI analyzes food image
-- Generates:
-  - Quality result
-  - Confidence score
-  - AI model hash
-- AI result is stored on blockchain
-
-This ensures **trust in automated decisions**.
+### Backend
+- FastAPI
+- PostgreSQL
+- LangChain
+- Google Gemini
+- psycopg2
 
 ---
 
-### 6️⃣ Blockchain Storage
-Blockchain ensures:
-- Immutability
-- Transparency
-- Auditability
+## ⚙️ Setup Instructions
 
-Once data is written, **no one can change it**.
+### 1️⃣ Backend Setup
 
----
+```bash
+cd ai-food-menu-backend
+python -m venv venv
+source venv/bin/activate   # Windows: venv\Scripts\activate
+pip install -r requirements.txt
 
-### 7️⃣ QR Code Verification
-- Batch ID is converted to a QR code
-- QR code is printed on food package
-- Anyone can scan QR to view full food history
 
----
+Create a .env file:
 
-### 8️⃣ Food Recall (Emergency Case)
-- Owner can recall a batch if contamination is detected
-- Batch is marked as **Recalled**
-- No further records can be added
-- Consumers are instantly informed
+DATABASE_URL=postgresql://user:password@localhost:5432/ai_food_menu
+GOOGLE_API_KEY=your_gemini_api_key
 
----
 
-## 🔐 Why Blockchain is Used
-Without blockchain:
-- Data can be edited or deleted
-- No trust in food records
+Run backend:
 
-With blockchain:
-- Data is permanent
-- Fully transparent
-- Tamper-proof
+uvicorn app.main:app --reload
 
-Blockchain guarantees **data integrity**, not food quality itself.
 
----
+Backend runs on:
 
-## 🧠 Role of AI in the System
-AI is responsible for:
-- Food quality analysis
-- Generating confidence score
-- Providing automated inspection
+http://localhost:8000
 
-Blockchain stores **AI outputs**, ensuring they cannot be manipulated later.
+2️⃣ Frontend Setup
+cd frontend
+npm install
+npm run dev
 
----
 
-## ⚠️ Important Note
-This system:
-- Ensures **data cannot be changed**
-- Does **not guarantee data authenticity**
-- Depends on verified actors and correct input
+Frontend runs on:
 
----
+http://localhost:5173
 
-## 🎓 Project Scope
-This project is developed as a **college-level prototype**.
+🔁 How RLHF Works
 
-✔ Demonstrates AI + Blockchain integration  
-✔ Implements smart contracts  
-✔ Shows real-world supply chain logic  
+User chats with the AI about a dish
+After interaction, written feedback is required
 
-❌ Not a production or government system  
+Feedback is:
+Parsed into sentiment & tags
 
----
+Logged to database
 
-## 🏁 Conclusion
-The AI + Blockchain Food Traceability System provides:
-- Transparent food history
-- Trustworthy AI analysis
-- Secure and immutable records
-- Better consumer confidence
+Aggregated feedback influences:
 
-This project demonstrates how emerging technologies can improve **food safety and supply chain transparency**.
+AI tone
 
----
+Detail level
 
-## 📜 License
-This project is licensed under the MIT License.
+Safety emphasis
+
+Safety rules are never overridden by feedback.
+
+🧪 How to Test Learning
+
+Chat with multiple dishes
+
+Submit feedback (positive & negative)
+
+Check database tables:
+
+feedback_logs
+
+ai_interactions
+
+Restart backend and observe AI tone changes
+
+🔐 Safety by Design
+
+AI cannot enable unsafe dishes
+
+Freshness logic is authoritative
+
+All AI interactions are logged
+
+Feedback affects communication, not safety thresholds
+
+🏁 Project Status
+
+✅ Backend complete
+✅ Frontend complete
+✅ AI Chat working
+✅ RLHF pipeline active
+✅ Hackathon-ready
+
+🌟 Why This Matters
+
+Food safety systems today are:
+
+Static
+Opaque
+Trust-based
+
+This project makes food explainable, adaptive, and accountable.
+
+Built with ❤️ for trust, transparency, and safer dining.

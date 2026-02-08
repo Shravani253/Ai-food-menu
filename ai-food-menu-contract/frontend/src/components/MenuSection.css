@@ -1,0 +1,68 @@
+.menu-section {
+    margin: 24px 0;
+}
+
+.horizontal-scroll {
+    display: flex;
+    gap: 45px;
+    overflow-x: auto;
+    padding: 12px 4px 16px;
+    ;
+
+    scroll-behavior: smooth;
+}
+
+.horizontal-scroll::-webkit-scrollbar {
+    height: 6px;
+}
+
+.horizontal-scroll::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-label {
+    background: linear-gradient(135deg, #ffcc70, #ffb347);
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.menu-header h2 {
+    flex: 1;
+    font-size: 20px;
+}
+
+.view-all {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+
+    padding-bottom: 8px;
+}
+
+/* Hide scrollbar (Chrome, Edge, Safari) */
+.menu-list::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar (Firefox) */
+.menu-list {
+    scrollbar-width: none;
+}

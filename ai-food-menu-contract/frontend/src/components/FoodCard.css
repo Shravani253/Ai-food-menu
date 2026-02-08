@@ -1,0 +1,49 @@
+.food-card {
+    min-width: 220px;
+    background: orange;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.food-card img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+}
+
+.food-info {
+    padding: 12px;
+}
+
+
+.food-card:hover {
+    transform: translateY(-4px);
+}
+
+.food-card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.food-card-footer {
+    padding: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-card-footer h4 {
+    margin: 0 0 6px;
+    font-size: 14px;
+}
+
+.arrow-btn {
+    border: none;
+    background: #f2f2f2;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}

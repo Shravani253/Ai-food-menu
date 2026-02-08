@@ -1,0 +1,21 @@
+.status-badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-badge.fresh {
+    background-color: #3cb371;
+    color: #fff;
+}
+
+.status-badge.caution {
+    background-color: #f4c430;
+    color: #000;
+}
+
+.status-badge.unavailable {
+    background-color: #e74c3c;
+    color: #fff;
+}
