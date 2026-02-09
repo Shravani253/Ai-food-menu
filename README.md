@@ -1,4 +1,4 @@
-# 🍽️ AI Food Menu — Freshness, Safety & Trust
+# 🍽️ AI Food Menu — Freshness, Safety & Trust.
 
 An **AI-powered restaurant menu system** that dynamically adapts based on **ingredient freshness, storage conditions, and real human feedback (RLHF)**.
 
