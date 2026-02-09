@@ -126,7 +126,7 @@ uvicorn app.main:app --reload
 
 Backend runs on:
 
-https://ai-food-menu-backend.onrender.com
+https://ai-food-menu.onrender.com
 
 2️⃣ Frontend Setup
 cd frontend
