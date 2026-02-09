@@ -11,11 +11,11 @@ const DishDetailPage = () => {
     const [showInsight, setShowInsight] = useState(false);
 
     useEffect(() => {
-        fetch(`http://localhost:8000/menu/${id}`)
+        fetch(`https://ai-food-menu-backend.onrender.com/menu/${id}`)
             .then(res => res.json())
             .then(setDish);
 
-        fetch(`http://localhost:8000/menu/${id}/insight`)
+        fetch(`https://ai-food-menu-backend.onrender.com/menu/${id}/insight`)
             .then(res => res.json())
             .then(data => setInsight(data.text));
     }, [id]);

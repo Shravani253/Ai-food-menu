@@ -37,7 +37,7 @@ const DishChatbot = ({ dishId }: Props) => {
     // -----------------------------
     const sendFeedbackToBackend = async (text: string) => {
         try {
-            await fetch(`http://localhost:8000/menu/${dishId}/feedback`, {
+            await fetch(`https://ai-food-menu-backend.onrender.com/menu/${dishId}/feedback`, {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ text }),
@@ -60,7 +60,7 @@ const DishChatbot = ({ dishId }: Props) => {
 
         try {
             const res = await fetch(
-                `http://localhost:8000/menu/${dishId}/chat`,
+                `https://ai-food-menu-backend.onrender.com/menu/${dishId}/chat`,
                 {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },

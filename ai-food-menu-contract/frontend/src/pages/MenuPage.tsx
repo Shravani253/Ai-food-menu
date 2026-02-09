@@ -7,7 +7,7 @@ const MenuPage = () => {
     const [menu, setMenu] = useState<MenuItem[]>([]);
 
     useEffect(() => {
-        fetch("http://localhost:8000/menu")
+        fetch("https://ai-food-menu-backend.onrender.com/menu")
             .then(res => res.json())
             .then(data => setMenu(data))
             .catch(err => console.error("Menu fetch error:", err));

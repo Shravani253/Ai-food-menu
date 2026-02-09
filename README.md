@@ -126,7 +126,7 @@ uvicorn app.main:app --reload
 
 Backend runs on:
 
-http://localhost:8000
+https://ai-food-menu-backend.onrender.com
 
 2️⃣ Frontend Setup
 cd frontend
