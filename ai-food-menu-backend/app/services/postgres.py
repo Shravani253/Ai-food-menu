@@ -2,29 +2,15 @@ import os
 import psycopg2
 from psycopg2.extras import RealDictCursor
 from dotenv import load_dotenv
-from pathlib import Path
 
-# Force-load .env from backend root
-BASE_DIR = Path(__file__).resolve().parents[2]
-ENV_PATH = BASE_DIR / ".env"
-
-print("🔍 ENV PATH =", ENV_PATH)
-print("🔍 ENV EXISTS =", ENV_PATH.exists())
-
-load_dotenv(dotenv_path=ENV_PATH)
-
-print("🔍 RAW ENV CONTENT:")
-with open(ENV_PATH, "r") as f:
-    print(f.read())
-
-print("🔍 DB_NAME AFTER LOAD =", os.getenv("DB_NAME"))
-
+# Safe: loads .env locally if present, ignored on Render
+load_dotenv()
 
 
 def get_db_connection():
     """
     Create and return a PostgreSQL database connection.
-    Returns None if connection fails.
+    Works for both LOCAL (.env) and RENDER (environment variables).
     """
     try:
         conn = psycopg2.connect(
@@ -36,14 +22,14 @@ def get_db_connection():
             cursor_factory=RealDictCursor,
         )
 
-        # 🔑 IMPORTANT: enable autocommit BEFORE session-level commands
+        # Enable autocommit before session-level commands
         conn.autocommit = True
 
         schema = os.getenv("DB_SCHEMA", "public")
         with conn.cursor() as cur:
             cur.execute(f"SET search_path TO {schema};")
 
-        # 🔁 switch back to transactional mode if you want
+        # Optional: return to transactional mode
         conn.autocommit = False
 
         return conn
