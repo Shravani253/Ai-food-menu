@@ -1,4 +1,4 @@
-import FoodCard from "./foodcard";
+import FoodCard from "./FoodCard";
 import type { MenuItem } from "../types/menu";
 import "./MenuSection.css";
 
