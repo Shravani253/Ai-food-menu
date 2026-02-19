@@ -112,17 +112,7 @@ python -m venv venv
 source venv/bin/activate   # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
-
-Create a .env file:
-
-DATABASE_URL=postgresql://user:password@localhost:5432/ai_food_menu
-GOOGLE_API_KEY=your_gemini_api_key
-
-
-Run backend:
-
-uvicorn app.main:app --reload
-
+To Run and see the demo of live application 
 
 Backend runs on:
 
