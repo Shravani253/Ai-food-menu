@@ -136,7 +136,7 @@ npm run dev
 
 Frontend runs on:
 
-http://localhost:5173
+https://ai-food-menu.vercel.app/
 
 🔁 How RLHF Works
 
